@@ -1,0 +1,39 @@
+{
+  "app": { "name": "Robinhood" },
+  "nav": {
+    "home": "Home", "about": "About", "contact": "Contact", "chat": "Chat",
+    "panel": "Panel", "dashboard": "Dashboard", "profile": "Profile", "login": "Sign in"
+  },
+  "theme": { "system": "System", "light": "Light", "dark": "Dark" },
+  "common": {
+    "save": "Save", "send": "Send", "cancel": "Cancel",
+    "loading": "Loading…", "success": "Done!", "error": "Something went wrong."
+  },
+  "status": { "success": "Success", "error": "Error", "warning": "Warning", "info": "Notice" },
+  "home": {
+    "title": "Build fast. Ship with confidence.",
+    "subtitle": "A clean, fast and bilingual starting point for your project.",
+    "cta": "Get started",
+    "learnMore": "Learn more",
+    "features": {
+      "fast": { "title": "Fast", "text": "Server rendering and instant navigation without page reloads." },
+      "secure": { "title": "Secure", "text": "Safe authentication and communication with the Django backend." },
+      "bilingual": { "title": "Bilingual", "text": "Full support for Persian (RTL) and English (LTR)." }
+    }
+  },
+  "about": {
+    "title": "About us",
+    "body": "We focus on building simple, fast and reliable products. Replace this text with your own story."
+  },
+  "contact": {
+    "title": "Contact us", "name": "Full name", "email": "Email",
+    "message": "Message", "sent": "Your message has been sent."
+  },
+  "chat": { "title": "Chat", "placeholder": "Type a message…", "empty": "No messages yet. Say hi 👋" },
+  "auth": { "title": "Sign in", "username": "Username or email", "password": "Password", "submit": "Sign in" },
+  "dashboard": { "visits": "Visits", "messages": "Messages", "tickets": "Open tickets" },
+  "profile": {
+    "title": "Profile", "firstName": "First name", "lastName": "Last name",
+    "email": "Email", "phone": "Mobile number", "bio": "About me"
+  }
+}

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Brand + status colors ---------- */
+@theme {
+  --font-sans: "Inter Variable", "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50:  #ddf4ff;
+  --color-brand-100: #b6e3ff;
+  --color-brand-200: #80ccff;
+  --color-brand-300: #54aeff;
+  --color-brand-400: #388bfd;
+  --color-brand-500: #2f81f7;
+  --color-brand-600: #1f6feb;  /* main */
+  --color-brand-700: #0969da;
+  --color-brand-800: #0550ae;
+  --color-brand-900: #033d8b;
+
+  --color-success: #2da44e;
+  --color-danger:  #e5484d;
+  --color-warning: #d9a21b;
+  --color-info:    #2f81f7;
+}
+
+/* ---------- Light / dark surfaces (GitHub-like) ---------- */
+:root {
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --line: #d0d7de;
+  --fg: #1f2328;
+  --muted: #656d76;
+}
+.dark {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --line: #30363d;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  color-scheme: dark;
+}
+
+/* makes bg-bg, bg-surface, border-line, text-fg, text-muted available */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+}
+
+@layer base {
+  body { @apply bg-bg text-fg antialiased; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-md border border-line px-4 py-2 text-sm font-medium transition-colors hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500;
+  }
+  .btn-primary { @apply border-transparent bg-brand-600 text-white hover:bg-brand-700; }
+
+  .card  { @apply rounded-xl border border-line bg-surface p-5; }
+  .label { @apply mb-1 block text-sm font-medium; }
+  .input {
+    @apply w-full rounded-md border border-line bg-bg px-3 py-2 text-sm placeholder:text-muted focus:border-brand-500 focus:outline-2 focus:outline-brand-500/30;
+  }
+
+  .nav-link {
+    @apply inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-muted transition-colors hover:bg-surface hover:text-fg;
+  }
+  .nav-link-active { @apply bg-surface text-fg; }
+
+  .badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium; }
+  .badge-success { @apply bg-success/15 text-success; }
+  .badge-danger  { @apply bg-danger/15 text-danger; }
+  .badge-warning { @apply bg-warning/15 text-warning; }
+  .badge-info    { @apply bg-info/15 text-info; }
+}
