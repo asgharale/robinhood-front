@@ -4,22 +4,49 @@
     "home": "Home", "about": "About", "contact": "Contact", "chat": "Chat",
     "panel": "Panel", "dashboard": "Dashboard", "profile": "Profile", "login": "Sign in"
   },
-  "theme": { "system": "System", "light": "Light", "dark": "Dark" },
   "common": {
     "save": "Save", "send": "Send", "cancel": "Cancel",
     "loading": "Loading…", "success": "Done!", "error": "Something went wrong."
   },
   "status": { "success": "Success", "error": "Error", "warning": "Warning", "info": "Notice" },
+  "theme": { "label": "Theme", "system": "System", "light": "Light", "dark": "Dark" },
+
   "home": {
-    "title": "Build fast. Ship with confidence.",
-    "subtitle": "A clean, fast and bilingual starting point for your project.",
-    "cta": "Get started",
-    "learnMore": "Learn more",
+    "badge": "Free · Persian & English",
+    "title": "Ask anything. Get answers with sources.",
+    "subtitle": "A free AI assistant that answers from your documents, powered by tokens we collect and donate to people in need.",
+    "s1": "What can you help me with?",
+    "s2": "Summarize my documents",
+    "s3": "How does the Robinhood project work?",
+    "scroll": "Learn about the project",
+    "about": {
+      "title": "The Robinhood project",
+      "body": "Robinhood collects free tokens and donates them to people in need, so more people can use AI tools without paying for them.",
+      "quote": "A friend in need is a friend indeed."
+    },
+    "stepsTitle": "How it works",
+    "steps": {
+      "gather": { "title": "Gather", "text": "We find and collect free tokens." },
+      "donate": { "title": "Donate", "text": "We give them to people who need them." },
+      "use": { "title": "Use", "text": "They use the assistant for free." }
+    },
     "features": {
-      "fast": { "title": "Fast", "text": "Server rendering and instant navigation without page reloads." },
-      "secure": { "title": "Secure", "text": "Safe authentication and communication with the Django backend." },
-      "bilingual": { "title": "Bilingual", "text": "Full support for Persian (RTL) and English (LTR)." }
-    }
+      "sources": { "title": "Answers with sources", "text": "Responses are grounded in your documents, with the sources shown." },
+      "bilingual": { "title": "Persian & English", "text": "Ask in either language. The interface follows you, RTL or LTR." },
+      "free": { "title": "Free for those in need", "text": "Donated tokens cover the cost of your questions." }
+    },
+    "cta": "Ask a question"
+  },
+
+  "chat": {
+    "title": "Chat",
+    "placeholder": "Ask a question…",
+    "emptyTitle": "How can I help?",
+    "emptyHint": "Ask me anything about your documents.",
+    "sources": "Sources",
+    "new": "New chat",
+    "error": "Couldn’t get an answer. Please try again.",
+    "disclaimer": "Answers may contain mistakes. Check the sources."
   },
   "about": {
     "title": "About us",
@@ -29,7 +56,6 @@
     "title": "Contact us", "name": "Full name", "email": "Email",
     "message": "Message", "sent": "Your message has been sent."
   },
-  "chat": { "title": "Chat", "placeholder": "Type a message…", "empty": "No messages yet. Say hi 👋" },
   "auth": { "title": "Sign in", "username": "Username or email", "password": "Password", "submit": "Sign in" },
   "dashboard": { "visits": "Visits", "messages": "Messages", "tickets": "Open tickets" },
   "profile": {
